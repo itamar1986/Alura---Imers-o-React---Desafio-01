@@ -29,7 +29,7 @@ function CadastroCategorias() {
 	useEffect(() => {
 		const url = window.location.hostname.includes('localhost')
 			? 'http://localhost:8080/categorias'
-			: 'https://.herokuapp.com/categorias';
+			: 'https://minnowflix.herokuapp.com/categorias';
 
 		fetch(url).then(async (response) => {
 			const resp = await response.json();
